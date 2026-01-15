@@ -2,24 +2,41 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        String text = "Hola mundo";
+        String frase = "Mi nombre es Arely";
+        String malo = "    Alexis Israel    ";
 
-        for (int i = 0; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        int longitud = text.length();
 
-        byte edad = 18;
-        int num_grande = 1000;
-        float decimal = 12.2f;
-        double decimal_double = 12.3;
+        // reemplazar una palabra u oracion por otra.
+        // primer argumento = palabra que se va a reemplazar
+        // segundo argumento = palabra que la va a reemplazar
+        String otro_texto = text.replaceAll("mundo", "Arely");
 
-        boolean bool = true;
-        char simbolo = 'a';
+        System.out.println(text);
+        System.out.println(longitud);
+        System.out.println(otro_texto);
 
-        System.out.println("\nedad = " + edad + "\nnum_grande = " + num_grande);
+        // metodo que devuelve true o false dependiendo de si se cumple la condicón
+        System.out.println(otro_texto+" termina con 'ely'? "+otro_texto.endsWith("ely"));
+        System.out.println(otro_texto+" termina con 'undo'? "+otro_texto.endsWith("undo"));
+
+        System.out.println(otro_texto+" inicia con 'Ho'? "+otro_texto.startsWith("Ho"));
+        System.out.println(otro_texto+" inicia con 'Are'? "+otro_texto.startsWith("Are"));
+
+        // saber si el string contiene o no una cadena de texto en específico.
+        System.out.println(frase.contains("es"));
+
+        // saber en qué parte del texto de encuentra la palabra (devuelve el índice) se puede buscar string o caracter
+        System.out.println(frase.indexOf("es"));
+
+        // poner todo el texto en mayúscula
+        System.out.println(frase.toUpperCase());
+        // poner todo el texto en minúscula
+        System.out.println(frase.toLowerCase());
+
+        // quitar los espacios que se encuentran al comienzo y al final de un string
+        System.out.println(malo.trim());
+        System.out.println(malo);
     }
 }
