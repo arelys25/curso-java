@@ -11,5 +11,20 @@ public class Main {
         // empresa = "Otro nombre"; // ESTO NO SE PUEDE HACER CON UNA CONSTANTE
         System.out.println(empresa);
 
+        // ESTE ES UN COMENTARIO DE UNA SOLA LÍNEA
+        /**
+         *  ESTE
+         *  ES
+         *  UN
+         *  COMENTARIO
+         *  DE MULTIPLES
+         *  LINEAS
+         *  Colocamos una linea con 2 asteriscos y pulsamos enter
+         */
+
+        /* Hola
+        * iojdasdjs
+        * */
+
     }
 }
