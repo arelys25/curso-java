@@ -5,33 +5,28 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        // ARGUMENTOS PARA CREAR UN ARRAY
-        // tipo de dato que se va a almacenar
-        // [] =
-        // new
-        // tipo de dato
-        // [longitud que tendrá el array]
-        int [] numeros = new int [10];
+        // ARRAY DE ARRAYS, es como hacer una matriz [][] significa que es un array de arrays
+        int[][] numeros = {{0,1}, {3,4}};
 
-        // colocar valores directamente
-        int [] nums = {2,4,6,8,10};
+        // forma de inicializar un array de arrays si no sabemos su logitud
+        int [][] num = new int [3][2];
+        num [0][0] = 5;
+        num [2][1] = 10;
 
-        // agregar elementos al array
-        // poner la posicion o indice donde se va a colocar el elemento nuevo y luego poner el elemento
-        numeros[0] = 2;
-        numeros[5] = 7;
+        // array de 3 dimensiones
+        int [][][] num2 = new int [3][2][4];
+        num2 [0][0][2] = 5;
+        num2 [2][1][3] = 10;
 
+        // imprimir un array normal
+        //System.out.println(Arrays.toString(numeros));
 
-        // usar el metodo toSTring de la clase Array para inicializar o mostrar el array
-        System.out.println(Arrays.toString(numeros));
+        // imprimir un array de arrays
+        System.out.println(Arrays.deepToString(numeros));
 
-        // longitud del array
-        System.out.println(numeros.length);
+        System.out.println(Arrays.deepToString(num));
 
-        // ordenar un array
-        Arrays.sort(numeros);
-        System.out.println(Arrays.toString(numeros));
+        System.out.println(Arrays.deepToString(num2));
 
-        System.out.println(Arrays.toString(nums));
     }
 }
