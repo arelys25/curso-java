@@ -5,18 +5,16 @@ import java.util.Arrays;
 public class Main {
 
     // si queremos utilizar el metodo dentro de un metodo static (psvm) el metodo también tendrá que ser static
-    static void miMetodo(){
-        System.out.println("Hola mundo");
-
-    }
-
-    static void otroMetodo(){
-        System.out.println("Adios método");
+    static void miMetodo(String nombre, int edad) { // parametros
+        System.out.println("Hola "+nombre + "\nTu edad es: " + edad);
     }
 
     public static void main(String[] args) {
         // ejecutar el metodo
-        miMetodo();
-        otroMetodo();
+
+        miMetodo("Arely",20); // argumentos
+        miMetodo("Alexis",24);
+
+
     }
 }
