@@ -9,10 +9,19 @@ public class Main {
        Scanner sc = new Scanner(System.in);
        String input = "";
 
-       while (!input.equals("salir")) {
+       while (true) {
            System.out.println("Ingresa comando:");
            input = sc.next().toLowerCase(); // leer la siguiente linea y hacela toda minuscula
-           System.out.println("Su respuesta fue: "+input);
+
+           if (input.equals("exit")) {
+               break; // se sale del bucle e ignora todo lo después de este punto
+           }
+
+           if (input.equals("continuar")) {
+               continue; // se regresa al inicio del bucle
+           }
+
+           System.out.println("Linea de test");
 
        }
 
