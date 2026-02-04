@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         // crear una instancia de la clase
         User user = new User();
-        // Acceder a los atributos de la clase 
+        // Acceder a los atributos de la clase
         user.name = "Arely";
 
         User user2 = new User();
