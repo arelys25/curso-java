@@ -16,6 +16,9 @@ public class Main {
         user2.name = "Alexis";
         System.out.println(user2.id);
 
+        user.saludar();
+        user2.saludar();
+
     }
 
 
