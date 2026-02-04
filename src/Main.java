@@ -15,6 +15,9 @@ public class Main {
         user.saludar();
         user2.saludar();
 
+        // variable static que no se puede cambiar su valor, solo se accede a ella desde la misma clase
+        System.out.println(User.tableName);
+
     }
 
 
