@@ -10,9 +10,12 @@ public class Main {
         User user = new User();
         // Acceder a los atributos de la clase
         user.name = "Arely";
+        System.out.println(user.id);
 
         User user2 = new User();
         user2.name = "Alexis";
+        System.out.println(user2.id);
+
     }
 
 
